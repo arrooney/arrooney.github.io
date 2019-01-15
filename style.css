@@ -40,6 +40,17 @@ h4{
 	text-align: right;
 }
 
+ul{
+color:orange;
+font-size:25px;
+}
+
+p {
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5);
+	font-size: 25px;
+}
+
 a:link {
 	font: courier;
 	font-size: 30px;
