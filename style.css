@@ -16,6 +16,13 @@
         overflow: hidden;
 }
 
+h2{
+	font: courier;
+	color: orange;
+	text-align: justify;
+	font-size: 40px;
+}
+
 h1{
 	font: courier;
 	color: orange;
