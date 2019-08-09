@@ -1,7 +1,39 @@
 
 <body>
-    <div  class="project-banner">
-    
-Theres nothing here yet!
+    <div class="container-fluid project-banner">
+        <div class="row" ng-init="absatON=false; otherON=false;">
+            <div class="mt-3 col-xs px-3">
+                <button class="btn my-btn text-on-navy" ng-click="absatON=!absatON; otherON=false;">AlbertaSat</button>
+            </div>
+            <div class="mt-3 col-xs px-3">
+                <button class="btn my-btn text-on-navy" ng-click="otherON=!otherON; absatON=false;">Other</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mt-3 col">
+                <div class="card jumbotron-navy" ng-show="absatON">
+                    <div class="text-on-navy p-3">
+                        AlbertaSat is a student group at the University of Alberta, we are a team of undergraduate students and faculty advisors who build satellites!</br>
+                        Ex-alta 1 was not only AlbertaSat's first satellite, but also Alberta's first satellite. Ex-alta 1 has since left it's orbit, and lives on in memory. 
+                        We are now working on Ex-alta 2, an earth imaging satellite that will be designed to detect, and predict forest fires using a multispectral imager, and phenology.</br>
+                        My role on the team is as the Software Lead, in this role I have spent the summer with an NSERC USRA grant reasearching and implementing
+                        an open source network stack for use on Ex-alta 2, as well as assisting in developing and integrating an Inter-integrated Circuit driver (I2C)
+                        for the data bus.
+                        Over the summer I was also tasked with designing and implementing automation for the Ex-alta 1 ground station. This was because operators had to be
+                        awake at all hours to communicate with the spacecraft when overhead. I was able to create numerous bash, and FORTH scripts, with hooks to C code that
+                        automated many routine telemtry collection tasks.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mt-3 col">
+                <div class="card jumbotron-navy" ng-show="otherON">
+                    <div class="text-on-navy p-3">
+                       123 
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
