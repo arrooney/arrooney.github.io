@@ -23,3 +23,32 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+.home-banner{
+  background: url('photo/DSC_0370.JPG') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 900px;
+}
+
+.project-banner {
+  background: url('photo/20180803-MI-SEDS-CAN-SBX MIIST Imager Integation in Cleanroom23.JPG') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  height: 900px;
+}
+
+.jumbotron-navy {
+   background: rgb(1, 26, 39); /* This is for ie8 and below */
+   background: rgba(1, 26, 39, 0.5); 
+}
+
+.text-on-navy {
+    color: rgb(206, 227, 237);
+}
