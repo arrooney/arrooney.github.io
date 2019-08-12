@@ -28,11 +28,8 @@ body, html {
 }
 
 .home-banner{
-  background: url('photo/DSC_0370.JPG') no-repeat center center fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url('photo/DSC_0370.JPG');
   background-size: cover;
-  height: 100%;
 }
 
 .project-banner {
