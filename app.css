@@ -1,7 +1,4 @@
 /* app css stylesheet */
-body, html {
-  height: 100%;
-}
 
 .menu {
   list-style: none;
@@ -37,9 +34,7 @@ body, html {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
   -o-background-size: cover;
-  height: 100%;
 }
 
 .jumbotron-navy {
