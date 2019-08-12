@@ -31,6 +31,7 @@
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  height: 100%;
 }
 
 .project-banner {
@@ -40,6 +41,7 @@
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  height: 100%;
 }
 
 .jumbotron-navy {
