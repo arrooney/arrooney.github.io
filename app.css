@@ -45,14 +45,14 @@
 }
 
 .jumbotron-navy {
-   background: rgb(1, 26, 39); /* This is for ie8 and below */
-   background: rgba(1, 26, 39, 0.5); 
+   background: #B5EAD7; /* This is for ie8 and below */
+   background: #FFFFD8; 
 }
 
 .text-on-navy {
-    color: rgb(206, 227, 237);
+    color: #0082A8;
 }
 
 .my-btn {
-    background-color: #063852;
+    background-color: #FF9AA2;
 }
