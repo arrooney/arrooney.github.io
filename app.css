@@ -27,13 +27,13 @@
 
 .jumbotron-navy {
    background: #B5EAD7; /* This is for ie8 and below */
-   background: #FFFFD8; 
+   background: #8DFFCD; 
 }
 
 .text-on-navy {
-    color: #0082A8;
+    color: #474350;
 }
 
 .my-btn {
-    background-color: #FF9AA2;
+    background-color: #BBACC1;
 }
