@@ -10,6 +10,6 @@ a.config(['$routeProvider', function($routeProvider) {
 }])
 
 a.controller('View1Ctrl', function($scope, $interval) {
-    // Set the date we're counting down to
+    // logic goes here
     
 });
