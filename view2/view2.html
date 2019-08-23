@@ -2,20 +2,20 @@
 <body>
     <div class="container-fluid project-banner">
         <div class="row" ng-init="absatON=true; otherON=false;">
-            <div class="mt-3 col-xs px-3">
+            <div class="mt-3 col-xs p-4">
                 <button class="btn my-btn text-on-navy" ng-click="absatON=!absatON; robotON=false; laserON=false;">AlbertaSat</button>
             </div>
-            <div class="mt-3 col-xs px-3">
+            <div class="mt-3 col-xs p-4">
                 <button class="btn my-btn text-on-navy" ng-click="robotON=!robotON; absatON=false; laserON=false;">A* Robot</button>
             </div>
-            <div class="mt-3 col-xs px-3">
+            <div class="mt-3 col-xs p-4">
                 <button class="btn my-btn text-on-navy" ng-click="laserON=!laserON; absatON=false; robotON=false;">Laser Communication</button>
             </div>
         </div>
         <div class="row">
             <div class="mt-3 col">
                 <div class="card jumbotron-navy" ng-show="absatON">
-                    <div class="text-on-navy p-3">
+                    <div class="text-on-navy p-5">
                         <a href="https://spaces.facsci.ualberta.ca/AlbertaSat/">AlbertaSat</a> is a student group at the University of Alberta, we are a team of undergraduate students and faculty advisors who build satellites!</br>
                         Ex-alta 1 was not only AlbertaSat's first satellite, but also Alberta's first satellite. Ex-alta 1 has since left it's orbit, and lives on in memory. 
                         We are now working on Ex-alta 2, an earth imaging satellite that will be designed to detect, and predict forest fires using a multispectral imager, and phenology.</br>
@@ -32,7 +32,7 @@
         <div class="row">
             <div class="mt-3 col">
                 <div class="card jumbotron-navy" ng-if="robotON">
-                    <div class="text-on-navy p-3">
+                    <div class="text-on-navy p-5">
                         Another small project of mine was my <a href="https://github.com/KonradStanski/pathfindingRobot" target="_blank">path finding robot</a>. My friend and I created a robot that did two things: first, an image of a maze was input into the A* path finding algorithm, written in python. Next, the directions for how to navigate the maze was output to a robot with stepper motors over bluetooth; the Arduino controlled and C++ programmed robot then found it's way through the maze!</br>
                     </div>
                     <div class="p-3">
@@ -44,7 +44,7 @@
         <div class="row">
             <div class="mt-3 col">
                 <div class="card jumbotron-navy" ng-if="laserON">
-                    <div class="text-on-navy p-3">
+                    <div class="text-on-navy p-5">
                        Having had some experience with low-level communication protocols, my friend and I were able to implement <a href="https://github.com/KonradStanski/laserComms">laser communication</a> with hamming error correction code and packet acknowledgement. The setup included two Arduino nanos, each with a laser and a photoresistor. The Arduinos were fully capable of sending messages to one another with the ability to retry until each packet is acknowledged, and correct bit-flips!
                     </div>
                 </div>
