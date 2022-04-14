@@ -22,13 +22,25 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- Import jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+        // import jQuery
+        !function(t){"use strict";t(function(){})}(jQuery);
+        $(document).ready(function() {
+        if(window.location.href.indexOf('#capstone-project') != -1) {
+        $('#capstone-project').modal('show');
+        }
 
+        });
+    </script>
 </head>
 
 <body id="page-top" class="index">
@@ -77,7 +89,7 @@
                     <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
                         <hr class="star-light">
-                        <span class="skills">Computer Engineering Student | AlbertaSat Software Team Lead | Developer</span>
+                        <span class="skills">Computer Engineering, Nanoscale System Design | Space Software Designer | Custom Logic</span>
                     </div>
                 </div>
             </div>
@@ -94,6 +106,18 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#capstone-project" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                                <div class="small-text">Real time ML audio processing
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/filtera.png" class="img-responsive" alt="">
+                    </a>
+                </div>
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -118,6 +142,9 @@
                         <img src="img/portfolio/seds.png" class="img-responsive" alt="">
                     </a>
                 </div>
+
+            </div>
+            <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -130,8 +157,6 @@
                         <img src="img/portfolio/squabble.png" class="img-responsive" alt="">
                     </a>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -171,13 +196,23 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p style="text-align:justify">I am a 4th year Computer Engineering with a specialization in Nanoscale System Design at the University of Alberta. I have project and classroom experience with software design & development, project management, and am looking for more experience in hardware/logic design!</br>Outside of work, I am an avid rock-climber and try to get out to the mountains as often as possible.</p>
+                    <p style="text-align:justify">
+                        I am in my final year of Computer Engineering with a specialization in Nanoscale System Design at the University of 
+                        Alberta. I have project and classroom experience with software design & development, project management, VHDL logic design, custom floorplanning with Cadence, and have experience fabricating multilayer nanoscale electronic and MEMS systems at UAlberta's NanoFAB facility.
+                        </br>Outside of work, I am an avid rock-climber and try to get out to the mountains as often as 
+                        possible.
+                    </p>
                 </div>
                 <div class="col-lg-4">
-                    <p style="text-align:justify">From the projects highlighted in my portfolio along with my industry experience I have applied my knowledge of design and Engineering principles to do everything from develop firmware for the Ex-alta 2 satellite, and create a command shell for the sattelite, to working on some of the industries largest code-bases at Intuit. I am hoping to branch out an apply my in-class experience with CMOS and logic design in VHDL and Cadence to next-generation hardware designs.</p>
+                    <p style="text-align:justify">
+                        From the projects highlighted in my portfolio along with my industry experience I have applied my knowledge 
+                        of design and Engineering principles to make major contributions to more than 5 different space computers including the UAE's "Rashid" rover, and the Northern Spirit constellation.
+                         I have also worked on some of the industries largest code-bases at Intuit. I am hoping to branch out an apply my in-class 
+                        experience with CMOS and logic design in VHDL and Cadence to next-generation hardware designs.
+                    </p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="/docs/FullResume2021.pdf" class="btn btn-lg btn-outline">
+                    <a href="/docs/Andrew_Rooney_Resume_2021.pdf" class="btn btn-lg btn-outline">
                         <i class="fa fa-download" target="_blank"></i> Resume
                     </a>
                 </div>
@@ -252,6 +287,34 @@
     </div>
 
     <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="capstone-project" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Real time ML audio processing (Winter 2022 Capstone Project)</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/albertasat.png" class="img-responsive img-centered" alt=""> -->
+                            <object data="docs/AIVoiceProcessingPoster.pdf" type="application/pdf" width="800" height="500">
+                                <iframe src="https://docs.google.com/viewer?url=docs/AIVoiceProcessingPoster.pdf&embedded=true"></iframe>
+                            </object>
+                            <object data="docs/AIVP_2022_04_08_FR.pdf" type="application/pdf" width="800" height="1000">
+                                <iframe src="https://docs.google.com/viewer?url=docs/AIVP_2022_04_08_FR.pdf&embedded=true"></iframe>
+                            </object>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -350,6 +413,7 @@
             </div>
         </div>
     </div>
+    <section id="#groundstation">
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -381,7 +445,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div></section>
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
